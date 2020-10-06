@@ -1,12 +1,31 @@
 body {
   background-color: #f4f5f6;
+  font-family: "Roboto Condensed", sans-serif;
 }
-.container {
+.container-fluid {
+  max-width: 1310px;
   background-color: #fff;
+}
+a {
+  color: inherit;
 }
 
 /* HEADER */
 
 header {
   background-color: #f72210;
+}
+
+/* NAV */
+
+#nav-1,
+#nav-2 {
+  font-weight: bold;
+}
+#nav-1 {
+  font-size: 1.2em;
+  border-bottom: 2px solid #eee;
+}
+#nav-2 > a {
+  text-transform: uppercase;
 }

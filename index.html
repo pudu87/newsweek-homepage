@@ -4,21 +4,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+
     <title>Newsweek - News, Analysis, Politics, Business, Technology</title>
   </head>
 
   <body>
-    <div class="container">
-      <header class="blog-header py-3">
+    <div class="container-fluid p-0" id="top">
+      <header class="py-3">
         <div class="row flex-nowrap justify-content-between align-items-center">
           <div class="col-4 pt-1">
             <a class="text-white" href="#">Meteo</a>
             <a class="text-white" href="#">Date</a>
           </div>
           <div class="col-4 text-center">
-            <a class="blog-header-logo text-white" href="#">Newsweek</a>
+            <a class="text-white" href="#">Newsweek</a>
           </div>
           <div class="col-4 d-flex justify-content-end align-items-center">
             <a class="text-white" href="#">Login</a>
@@ -27,25 +29,25 @@
         </div>
       </header>
     
-      <div class="nav-scroller py-1 mb-2">
-        <nav class="nav d-flex justify-content-between">
-          <a class="p-2 text-muted" href="#">U.S.</a>
-          <a class="p-2 text-muted" href="#">World</a>
-          <a class="p-2 text-muted" href="#">Business</a>
-          <a class="p-2 text-muted" href="#">Tech & Science</a>
-          <a class="p-2 text-muted" href="#">Culture</a>
-          <a class="p-2 text-muted" href="#">Newsgeek</a>
-          <a class="p-2 text-muted" href="#">Sports</a>
-          <a class="p-2 text-muted" href="#">Health</a>
-          <a class="p-2 text-muted" href="#">The Debate</a>
-          <a class="p-2 text-muted" href="#">Vantage</a>
-          <a class="p-2 text-muted" href="#">Weather</a>
+      <div class="py-1 mb-2">
+        <nav class="nav d-flex py-2 justify-content-between" id="nav-1">
+          <a class="px-2" href="#">U.S.</a>
+          <a class="px-2" href="#">World</a>
+          <a class="px-2" href="#">Business</a>
+          <a class="px-2" href="#">Tech & Science</a>
+          <a class="px-2" href="#">Culture</a>
+          <a class="px-2" href="#">Newsgeek</a>
+          <a class="px-2" href="#">Sports</a>
+          <a class="px-2" href="#">Health</a>
+          <a class="px-2" href="#">The Debate</a>
+          <a class="px-2" href="#">Vantage</a>
+          <a class="px-2" href="#">Weather</a>
         </nav>
       </div>
 
-      <div class="nav-scroller py-1 mb-2">
-        <nav class="nav d-flex">
-          <a class="p-2 text-muted" href="#">Trending</a>
+      <div class="py-1 mb-2">
+        <nav class="nav d-flex" id="nav-2">
+          <a class="p-2" href="#">Trending</a>
           <a class="p-2 text-muted" href="#">Donald Trump</a>
           <a class="p-2 text-muted" href="#">Joe Biden</a>
           <a class="p-2 text-muted" href="#">Stimulus Package</a>
@@ -54,8 +56,85 @@
         </nav>
       </div>
 
-      <div style=height:1200px;></div>
+      <div class="container-fluid" id="news">
+        <div class="row">
+          <div class="col-3">
+            <section id="featured-stories">
+              <h2>Featured Stories</h2>
+              <div class="card" style="width: 18rem;">
+                <img src="images/biden.png" class="card-img-top" alt="Joe Biden">
+                <div class="card-img-overlay">
+                  <p class="card-text">Politics</p>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Biden Says if Roe v. Wade Is Overturned, He'll Make it 'Law of the Land'</h5>
+                  <p class="card-text">The Democratic presidential candidate said he will protect abortion rights even if the Supreme Court strikes them down.</p>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="col-6">
+            <section id="top-story">
+              <h2>Top Story</h2>
+            </section>
+            <section id="my-turn">
+              <h2>My Turn</h2>
+            </section>
+            <section id="culture-&-travel">
+              <h2>Culture & Travel</h2>
+            </section>
+            <section id="more-stories">
+              <h2>More Stories</h2>
+            </section>
+          </div>
+          <div class="col-3">
+            <section id="the-debate">
+              <h2>Debate</h2>
+            </section>
+            <section id="opinion">
+              <h2>Opinion</h2>
+            </section>
+            <section id="special-items">
+              
+            </section>
+          </div>
+        </div>
+      </div>
 
+      <div class="container-fluid" id="other">
+        <section id="in-the-magazine">
+
+        </section>
+        <section id="editors-pick">
+          
+        </section>
+      </div>
+
+      <div class="container-fluid" id="catgegories">
+        <section id="US">
+
+        </section>
+        <section id="world">
+          
+        </section>
+      </div>
+
+      <div class="container-fluid" id="subscription">
+        <section id="subscribe">
+
+        </section>
+        <section id="newsletter">
+          
+        </section>
+      </div>
+
+      <div class="container-fluid" id="bottom">
+        <footer>
+          Some text
+        </footer>
+      </div>
+    
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
