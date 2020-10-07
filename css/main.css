@@ -2,12 +2,15 @@ body {
   background-color: #f4f5f6;
   font-family: "Roboto Condensed", sans-serif;
 }
+
+/* BOOTSTRAP OVERRULE */
+
+a {
+  color: inherit;
+}
 .container-fluid {
   max-width: 1310px;
   background-color: #fff;
-}
-a {
-  color: inherit;
 }
 
 /* HEADER */
@@ -28,4 +31,39 @@ header {
 }
 #nav-2 > a {
   text-transform: uppercase;
+}
+
+/* ARTICLES */
+
+.card{
+  border: none;
+  border-radius: 0;
+  width: 100%;
+}
+.card-img-top {
+  border-radius: 0;
+}
+.card-img-b-overlay {
+  position: relative;
+}
+.card-img-b-overlay > p {
+  position: absolute;
+  bottom: 0;
+  color: #f72210;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.card-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+.card h5 {
+  font-weight: bold;
+}
+
+/* FOOTER */
+
+footer li {
+  display: inline;
 }
