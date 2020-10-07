@@ -1,10 +1,14 @@
 :root {
   --nw-red: #f72210;
 }
-
 body {
   background-color: #f4f5f6;
   font-family: "Roboto Condensed", sans-serif;
+}
+h5 > a:hover {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--nw-red);
 }
 
 /* BOOTSTRAP OVERRULE */
@@ -95,7 +99,128 @@ header a:hover {
   border-bottom: 2px solid #eee;
 }
 
-/* ARTICLES */
+/* NEWS */
+
+#news h2 {
+  color: #999;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: bold;
+}
+#news h5 {
+  font-size: 1.5em;
+}
+#my-turn > div > div:first-child,
+#culture-travel > div > div:first-child {
+  padding-left: 0;
+}
+#my-turn > div > div:last-child,
+#culture-travel > div > div:last-child {
+  padding-right: 0;
+}
+#my-turn .card-body,
+#culture-travel .card-body {
+  color: #999;
+  font-weight: bold;
+}
+#culture-travel .card-text {
+  padding: 2px 5px !important;
+  color: #333;
+  font-size: .7em;
+  font-weight: bold;
+  background-color: rgb(166, 196, 196);
+}
+#more-stories > article {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#more-stories .content {
+  padding-left: 1em;
+}
+#more-stories h5 {
+  font-size: 1em;
+  font-weight: bold;
+}
+#more-stories p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .9em;
+}
+#the-debate .content,
+#opinion .content {
+  padding-left: 1em;
+}
+#the-debate article:last-of-type div {
+  padding-left:0;
+  padding-right: 1em;
+}
+#the-debate h5,
+#opinion h5 {
+  font-size: .9em;
+  font-weight: bold;
+}
+#the-debate p,
+#opinion p {
+  text-transform: uppercase;
+  color: #555;
+  font-weight: bold;
+  font-size: .9em;
+}
+#the-debate a:hover,
+#opinion a:hover {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--nw-red);
+}
+#the-debate article {
+  padding-top: 1em;
+}
+#the-debate > article:first-of-type {
+  position: relative;
+  border-top: 4px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+#the-debate > article:last-of-type {
+  border-top: 1px solid #ddd;
+  border-bottom: 4px solid #ddd;
+  margin-top: 1px;
+}
+#vs {
+  position: relative;
+}
+#vs > div {
+  position: absolute;
+  margin: auto;
+  top: -16px;
+  left: 0;
+  right: 0;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  line-height: 2;
+}
+#vs span {
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #333;
+  text-align: center;
+}
+#opinion {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#opinion > article {
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
+#opinion > article:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+/* CARD */
 
 .card{
   border: none;
@@ -122,6 +247,11 @@ header a:hover {
 }
 .card h5 {
   font-weight: bold;
+}
+.card-text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  color: #333;
 }
 
 /* FOOTER */
