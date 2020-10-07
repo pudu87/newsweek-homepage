@@ -4,8 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@900&display=swap"> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"> 
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
 
     <title>Newsweek - News, Analysis, Politics, Business, Technology</title>
@@ -15,544 +19,565 @@
     <div class="container-fluid p-0" id="top">
       <header class="py-3">
         <div class="row flex-nowrap justify-content-between align-items-center">
-          <div class="col-4 pt-1">
-            <a class="text-white" href="#">Meteo</a>
-            <a class="text-white" href="#">Date</a>
+          <div class="col-4" id="meteo">
+            <a class="text-white font-weight-bold" href="#"><img src="images/meteo.png" height="24" width="24" alt=""> 9° Ñuñoa, CL & &#8250;</a>
+            <p class="text-white mt-2" href="#">Wed, Oct 06, 2020</p>
           </div>
-          <div class="col-4 text-center">
+
+          <div class="col-4 text-center" id="title">
             <a class="text-white" href="#">Newsweek</a>
           </div>
+
           <div class="col-4 d-flex justify-content-end align-items-center">
-            <a class="text-white" href="#">Login</a>
-            <a class="btn btn-sm btn-outline-secondary" href="#">Subscribe</a>
+            <a class="text-white" id="login" href="#">Login</a>
+            <a id="subscribe-btn" href="#">Subscribe &#8250;</a>
           </div>
         </div>
       </header>
     
       <div class="py-1 mb-2">
         <nav class="nav d-flex py-2 justify-content-between" id="nav-1">
-          <a class="px-2" href="#">U.S.</a>
+          <a class="px-2 pl-3" href="#">U.S.</a>
+          <span></span>
           <a class="px-2" href="#">World</a>
+          <span></span>
           <a class="px-2" href="#">Business</a>
+          <span></span>
           <a class="px-2" href="#">Tech & Science</a>
+          <span></span>
           <a class="px-2" href="#">Culture</a>
+          <span></span>
           <a class="px-2" href="#">Newsgeek</a>
+          <span></span>
           <a class="px-2" href="#">Sports</a>
+          <span></span>
           <a class="px-2" href="#">Health</a>
-          <a class="px-2" href="#">The Debate</a>
+          <span></span>
+          <a class="px-2" href="#">The Debatle</a>
+          <span></span>
           <a class="px-2" href="#">Vantage</a>
+          <span></span>
           <a class="px-2" href="#">Weather</a>
+          <div>
+            <input type="text" placeholder="Search">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search mr-3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+              <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+            </svg>
+          </div>
         </nav>
       </div>
 
-      <div class="py-1 mb-2">
+      <div class="pt-1">
         <nav class="nav d-flex" id="nav-2">
-          <a class="p-2" href="#">Trending</a>
-          <a class="p-2 text-muted" href="#">Donald Trump</a>
-          <a class="p-2 text-muted" href="#">Joe Biden</a>
-          <a class="p-2 text-muted" href="#">Stimulus Package</a>
-          <a class="p-2 text-muted" href="#">Coronavirus</a>
-          <a class="p-2 text-muted" href="#">2020 Election</a>
+          <p class="px-3 pl-4" href="#">Trending</p>
+          <a class="px-3" href="#">Donald Trump</a>
+          <a class="px-3" href="#">Joe Biden</a>
+          <a class="px-3" href="#">Stimulus Package</a>
+          <a class="px-3" href="#">Coronavirus</a>
+          <a class="px-3" href="#">2020 Election</a>
         </nav>
       </div>
 
-      <div class="container-fluid" id="news">
-        <div class="row">
-          <div class="col-3">
-            <section id="featured-stories">
-              <h2>Featured Stories</h2>
-              <div class="card">
-                <div class="card-img-b-overlay">
-                  <img src="images/biden-roe-vs-wade.png" class="card-img-top" alt="">
-                  <p class="card-text p-1 px-3">Politics</p>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Biden Says if Roe v. Wade Is Overturned, He'll Make it 'Law of the Land'</h5>
-                  <p class="card-text">The Democratic presidential candidate said he will protect abortion rights even if the Supreme Court strikes them down.</p>
+      <div id="pretty-bar-1"></div>
+      <div id="pretty-bar-2"></div>
+    </div>
+
+    <div class="container-fluid" id="news">
+      <div class="row">
+        <div class="col-3">
+          <section id="featured-stories">
+            <h2>Featured Stories</h2>
+            <div class="card">
+              <div class="card-img-b-overlay">
+                <img src="images/biden-roe-vs-wade.png" class="card-img-top" alt="">
+                <p class="card-text p-1 px-3">Politics</p>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Biden Says if Roe v. Wade Is Overturned, He'll Make it 'Law of the Land'</h5>
+                <p class="card-text">The Democratic presidential candidate said he will protect abortion rights even if the Supreme Court strikes them down.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-img-b-overlay">
+                <img src="images/jonathan-price.png" class="card-img-top" alt="">
+                <p class="card-text p-1 px-3">U.S.</p>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Texas Officer Who Shot Jonathan Price Is Arrested and Charged With Murder</h5>
+                <p class="card-text">The Texas Rangers, who are investigating the incident, said the investigators determined the actions of Shaun Lucas were not "objectionably reasonable."</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-img-b-overlay">
+                <img src="images/california-fire.png" class="card-img-top" alt="">
+                <p class="card-text p-1 px-3">News</p>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">California Fire Update, August Complex Becomes State's First 'Gigafire' </h5>
+                <p class="card-text">Fire suppression efforts in the West Zone of the August Complex Fire were hampered by "dangerously low humidity levels" on Monday, the California Department of Forestry and Fire Protection confirmed.</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-img-b-overlay">
+                <img src="images/mega-tsunami.png" class="card-img-top" alt="">
+                <p class="card-text p-1 px-3">Tech & Science</p>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">NASA Images Reveal Potential for 'Mega Tsunami' in Alaska</h5>
+                <p class="card-text">Scientists warn that an unstable mountain slope above Barry Arm could collapse, triggering a massive landslide.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="col-6">
+          <section id="top-story">
+            <h2>Top Story</h2>
+            <div class="card">
+              <div class="card-img-b-overlay">
+                <img src="images/trump-covid.png" class="card-img-top" alt="">
+                <p class="card-text p-1 px-3">U.S.</p>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Trump's 'Don't be Afraid' Tweet Met With People Sharing COVID Family Deaths</h5>
+                <p class="card-text">Shortly after his tweet, a number of Twitter users responded sharing their experiences with the novel virus, the family and friends they lost, as well as the over 200,000 fatalities caused by the virus.</p>
+              </div>
+            </div>
+          </section>
+
+          <section id="my-turn">
+            <h2>My Turn</h2>
+
+            <div class="container-fluid row">
+              <div class="col-4">
+                <div class="card">
+                  <img class="card-img-top" src="images/mom-covid.png" alt="">
+                  <div class="card-body">'My Mom Died From COVID-19 With Strangers at Her Side'</div>
                 </div>
               </div>
 
-              <div class="card">
-                <div class="card-img-b-overlay">
-                  <img src="images/jonathan-price.png" class="card-img-top" alt="">
-                  <p class="card-text p-1 px-3">U.S.</p>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Texas Officer Who Shot Jonathan Price Is Arrested and Charged With Murder</h5>
-                  <p class="card-text">The Texas Rangers, who are investigating the incident, said the investigators determined the actions of Shaun Lucas were not "objectionably reasonable."</p>
+              <div class="col-4">
+                <div class="card">
+                  <img class="card-img-top" src="images/black-father.png" alt="">
+                  <div class="card-body">I Am A Black Father With White Kids. I've Been Accused Of Kidnapping Them'</div>
                 </div>
               </div>
 
-              <div class="card">
-                <div class="card-img-b-overlay">
-                  <img src="images/california-fire.png" class="card-img-top" alt="">
-                  <p class="card-text p-1 px-3">News</p>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">California Fire Update, August Complex Becomes State's First 'Gigafire' </h5>
-                  <p class="card-text">Fire suppression efforts in the West Zone of the August Complex Fire were hampered by "dangerously low humidity levels" on Monday, the California Department of Forestry and Fire Protection confirmed.</p>
+              <div class="col-4">
+                <div class="card">
+                  <img class="card-img-top" src="images/oregon-fire.png" alt="">
+                  <div class="card-body">'My Home Was Burned Down In The Oregon Fires'</div>
                 </div>
               </div>
+            </div>
+          </section>
 
-              <div class="card">
-                <div class="card-img-b-overlay">
-                  <img src="images/mega-tsunami.png" class="card-img-top" alt="">
-                  <p class="card-text p-1 px-3">Tech & Science</p>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">NASA Images Reveal Potential for 'Mega Tsunami' in Alaska</h5>
-                  <p class="card-text">Scientists warn that an unstable mountain slope above Barry Arm could collapse, triggering a massive landslide.</p>
-                </div>
-              </div>
-            </section>
-          </div>
+          <section id="culture-&-travel">
+            <h2>Culture & Travel</h2>
 
-          <div class="col-6">
-            <section id="top-story">
-              <h2>Top Story</h2>
-              <div class="card">
-                <div class="card-img-b-overlay">
-                  <img src="images/trump-covid.png" class="card-img-top" alt="">
-                  <p class="card-text p-1 px-3">U.S.</p>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Trump's 'Don't be Afraid' Tweet Met With People Sharing COVID Family Deaths</h5>
-                  <p class="card-text">Shortly after his tweet, a number of Twitter users responded sharing their experiences with the novel virus, the family and friends they lost, as well as the over 200,000 fatalities caused by the virus.</p>
-                </div>
-              </div>
-            </section>
-
-            <section id="my-turn">
-              <h2>My Turn</h2>
-
-              <div class="container-fluid row">
-                <div class="col-4">
-                  <div class="card">
-                    <img class="card-img-top" src="images/mom-covid.png" alt="">
-                    <div class="card-body">'My Mom Died From COVID-19 With Strangers at Her Side'</div>
+            <div class="container-fluid row">
+              <div class="col-4">
+                <div class="card">
+                  <div class="card-img-b-overlay">
+                    <img class="card-img-top" src="images/rock.png" alt="">
+                    <p class="card-text p-1 px-3">Music</p>
                   </div>
-                </div>
-
-                <div class="col-4">
-                  <div class="card">
-                    <img class="card-img-top" src="images/black-father.png" alt="">
-                    <div class="card-body">I Am A Black Father With White Kids. I've Been Accused Of Kidnapping Them'</div>
-                  </div>
-                </div>
-
-                <div class="col-4">
-                  <div class="card">
-                    <img class="card-img-top" src="images/oregon-fire.png" alt="">
-                    <div class="card-body">'My Home Was Burned Down In The Oregon Fires'</div>
-                  </div>
+                  <div class="card-body">100 Best Rock Albums of All Time, According to Critics</div>
                 </div>
               </div>
-            </section>
 
-            <section id="culture-&-travel">
-              <h2>Culture & Travel</h2>
-
-              <div class="container-fluid row">
-                <div class="col-4">
-                  <div class="card">
-                    <div class="card-img-b-overlay">
-                      <img class="card-img-top" src="images/rock.png" alt="">
-                      <p class="card-text p-1 px-3">Music</p>
-                    </div>
-                    <div class="card-body">100 Best Rock Albums of All Time, According to Critics</div>
+              <div class="col-4">
+                <div class="card">
+                  <div class="card-img-b-overlay">
+                    <img class="card-img-top" src="images/wes-anderson.png" alt="">
+                    <p class="card-text p-1 px-3">Wes Anderson</p>
                   </div>
-                </div>
-
-                <div class="col-4">
-                  <div class="card">
-                    <div class="card-img-b-overlay">
-                      <img class="card-img-top" src="images/wes-anderson.png" alt="">
-                      <p class="card-text p-1 px-3">Wes Anderson</p>
-                    </div>
-                    <div class="card-body">Plot an Escape Around the World With 'Accidentally Wes Anderson' </div>
-                  </div>
-                </div>
-
-                <div class="col-4">
-                  <div class="card">
-                    <div class="card-img-b-overlay">
-                      <img class="card-img-top" src="images/emmys.png" alt="">
-                      <p class="card-text p-1 px-3">Emmys</p>
-                    </div>
-                    <div class="card-body">50 Black Actors Who Made Entertainment History</div>
-                  </div>
+                  <div class="card-body">Plot an Escape Around the World With 'Accidentally Wes Anderson' </div>
                 </div>
               </div>
-            </section>
 
-            <section id="more-stories">
-              <h2>More Stories</h2>
-
-              <article class="d-flex flex-row">
-                <img src="images/johnson.png" width="95" height="95" alt="">
-                <div class="content">
-                  <h5>Boris Johnson Pledges Green Industrial Revolution After COVID-19</h5>
-                  <p>Boris Johnson vowed to carry out a clean-energy revolution aimed at making every home in the U.K. powered by wind within 10 years.</p>
+              <div class="col-4">
+                <div class="card">
+                  <div class="card-img-b-overlay">
+                    <img class="card-img-top" src="images/emmys.png" alt="">
+                    <p class="card-text p-1 px-3">Emmys</p>
+                  </div>
+                  <div class="card-body">50 Black Actors Who Made Entertainment History</div>
                 </div>
-              </article>
+              </div>
+            </div>
+          </section>
 
-              <article class="d-flex flex-row">
-                <img src="images/biden-leading.png" width="95" height="95" alt="">
-                <div class="content">
-                  <h5>Biden Takes Widest Lead Yet Over Trump, Less Than 30 Days Until Election</h5>
-                  <p>Joe Biden saw major gains among men and white voters—two of Trump's most reliable demographics since the 2016 election.</p>
-                </div>
-              </article>
+          <section id="more-stories">
+            <h2>More Stories</h2>
 
-              <article class="d-flex flex-row">
-                <img src="images/johnson.png" width="95" height="95" alt="">
-                <div class="content">
-                  <h5>Boris Johnson Pledges Green Industrial Revolution After COVID-19</h5>
-                  <p>Boris Johnson vowed to carry out a clean-energy revolution aimed at making every home in the U.K. powered by wind within 10 years.</p>
-                </div>
-              </article>
+            <article class="d-flex flex-row">
+              <img src="images/johnson.png" width="95" height="95" alt="">
+              <div class="content">
+                <h5>Boris Johnson Pledges Green Industrial Revolution After COVID-19</h5>
+                <p>Boris Johnson vowed to carry out a clean-energy revolution aimed at making every home in the U.K. powered by wind within 10 years.</p>
+              </div>
+            </article>
 
-              <article class="d-flex flex-row">
-                <img src="images/biden-leading.png" width="95" height="95" alt="">
-                <div class="content">
-                  <h5>Biden Takes Widest Lead Yet Over Trump, Less Than 30 Days Until Election</h5>
-                  <p>Joe Biden saw major gains among men and white voters—two of Trump's most reliable demographics since the 2016 election.</p>
-                </div>
-              </article>
+            <article class="d-flex flex-row">
+              <img src="images/biden-leading.png" width="95" height="95" alt="">
+              <div class="content">
+                <h5>Biden Takes Widest Lead Yet Over Trump, Less Than 30 Days Until Election</h5>
+                <p>Joe Biden saw major gains among men and white voters—two of Trump's most reliable demographics since the 2016 election.</p>
+              </div>
+            </article>
 
-              <article class="d-flex flex-row">
-                <img src="images/johnson.png" width="95" height="95" alt="">
-                <div class="content">
-                  <h5>Boris Johnson Pledges Green Industrial Revolution After COVID-19</h5>
-                  <p>Boris Johnson vowed to carry out a clean-energy revolution aimed at making every home in the U.K. powered by wind within 10 years.</p>
-                </div>
-              </article>
+            <article class="d-flex flex-row">
+              <img src="images/johnson.png" width="95" height="95" alt="">
+              <div class="content">
+                <h5>Boris Johnson Pledges Green Industrial Revolution After COVID-19</h5>
+                <p>Boris Johnson vowed to carry out a clean-energy revolution aimed at making every home in the U.K. powered by wind within 10 years.</p>
+              </div>
+            </article>
 
-              <article class="d-flex flex-row">
-                <img src="images/biden-leading.png" width="95" height="95" alt="">
-                <div class="content">
-                  <h5>Biden Takes Widest Lead Yet Over Trump, Less Than 30 Days Until Election</h5>
-                  <p>Joe Biden saw major gains among men and white voters—two of Trump's most reliable demographics since the 2016 election.</p>
-                </div>
-              </article>
+            <article class="d-flex flex-row">
+              <img src="images/biden-leading.png" width="95" height="95" alt="">
+              <div class="content">
+                <h5>Biden Takes Widest Lead Yet Over Trump, Less Than 30 Days Until Election</h5>
+                <p>Joe Biden saw major gains among men and white voters—two of Trump's most reliable demographics since the 2016 election.</p>
+              </div>
+            </article>
 
-              <article class="d-flex flex-row">
-                <img src="images/johnson.png" width="95" height="95" alt="">
-                <div class="content">
-                  <h5>Boris Johnson Pledges Green Industrial Revolution After COVID-19</h5>
-                  <p>Boris Johnson vowed to carry out a clean-energy revolution aimed at making every home in the U.K. powered by wind within 10 years.</p>
-                </div>
-              </article>
+            <article class="d-flex flex-row">
+              <img src="images/johnson.png" width="95" height="95" alt="">
+              <div class="content">
+                <h5>Boris Johnson Pledges Green Industrial Revolution After COVID-19</h5>
+                <p>Boris Johnson vowed to carry out a clean-energy revolution aimed at making every home in the U.K. powered by wind within 10 years.</p>
+              </div>
+            </article>
 
-              <article class="d-flex flex-row">
-                <img src="images/biden-leading.png" width="95" height="95" alt="">
-                <div class="content">
-                  <h5>Biden Takes Widest Lead Yet Over Trump, Less Than 30 Days Until Election</h5>
-                  <p>Joe Biden saw major gains among men and white voters—two of Trump's most reliable demographics since the 2016 election.</p>
-                </div>
-              </article>
-            </section>
-          </div>
+            <article class="d-flex flex-row">
+              <img src="images/biden-leading.png" width="95" height="95" alt="">
+              <div class="content">
+                <h5>Biden Takes Widest Lead Yet Over Trump, Less Than 30 Days Until Election</h5>
+                <p>Joe Biden saw major gains among men and white voters—two of Trump's most reliable demographics since the 2016 election.</p>
+              </div>
+            </article>
 
-          <div class="col-3">
-            <section id="the-debate">
-              <h2>Debate</h2>
+            <article class="d-flex flex-row">
+              <img src="images/johnson.png" width="95" height="95" alt="">
+              <div class="content">
+                <h5>Boris Johnson Pledges Green Industrial Revolution After COVID-19</h5>
+                <p>Boris Johnson vowed to carry out a clean-energy revolution aimed at making every home in the U.K. powered by wind within 10 years.</p>
+              </div>
+            </article>
 
-              <article class="d-flex flex-row">
-                <img src="images/eric-swalwell.png" height="63" width="63" alt="">
-                <div class="content">
-                  <h5>The Time Is Now to Recommit to a National Assault Weapon Ban</h5>
-                  <p>By Eric Swalwell</p>
-                </div>
-              </article>
+            <article class="d-flex flex-row">
+              <img src="images/biden-leading.png" width="95" height="95" alt="">
+              <div class="content">
+                <h5>Biden Takes Widest Lead Yet Over Trump, Less Than 30 Days Until Election</h5>
+                <p>Joe Biden saw major gains among men and white voters—two of Trump's most reliable demographics since the 2016 election.</p>
+              </div>
+            </article>
+          </section>
+        </div>
 
-              <article class="d-flex flex-row">
-                <img src="images/jody-hice.png" height="63" width="63" alt="">
-                <div class="content">
-                  <h5>So-Called 'Assault Weapon' Ban Is Unconstitutional Political Grandstanding</h5>
-                  <p>By Jody Hice</p>
-                </div>
-              </article>
+        <div class="col-3">
+          <section id="the-debate">
+            <h2>Debate</h2>
 
-            </section>
+            <article class="d-flex flex-row">
+              <img src="images/eric-swalwell.png" height="63" width="63" alt="">
+              <div class="content">
+                <h5>The Time Is Now to Recommit to a National Assault Weapon Ban</h5>
+                <p>By Eric Swalwell</p>
+              </div>
+            </article>
 
-            <section id="opinion">
-              <h2>Opinion</h2>
+            <article class="d-flex flex-row">
+              <img src="images/jody-hice.png" height="63" width="63" alt="">
+              <div class="content">
+                <h5>So-Called 'Assault Weapon' Ban Is Unconstitutional Political Grandstanding</h5>
+                <p>By Jody Hice</p>
+              </div>
+            </article>
 
-              <article class="d-flex flex-row">
-                <img src="images/joanna-turner-bisgrove.png" height="63" width="63" alt="">
-                <div class="content">
-                  <h5>Even in a Pandemic, Republicans Want to Take Americans' Health Insurance</h5>
-                  <p>By Joanna Turner Bisgrove</p>
-                </div>
-              </article>
+          </section>
 
-              <article class="d-flex flex-row">
-                <img src="images/stephanie-taub.png" height="63" width="63" alt="">
-                <div class="content">
-                  <h5>Don't Further Delay the Amy Coney Barrett Confirmation</h5>
-                  <p>By Stephanie Taub</p>
-                </div>
-              </article>
+          <section id="opinion">
+            <h2>Opinion</h2>
 
-              <article class="d-flex flex-row">
-                <img src="images/brian-carroll.png" height="63" width="63" alt="">
-                <div class="content">
-                  <h5>Americans Want Answers the Two Major Parties Won't Give</h5>
-                  <p>By Brian Carroll</p>
-                </div>
-              </article>
-            </section>
+            <article class="d-flex flex-row">
+              <img src="images/joanna-turner-bisgrove.png" height="63" width="63" alt="">
+              <div class="content">
+                <h5>Even in a Pandemic, Republicans Want to Take Americans' Health Insurance</h5>
+                <p>By Joanna Turner Bisgrove</p>
+              </div>
+            </article>
 
-            <section id="special-items">
-              <article class="card">
-                <div class="card-img-b-overlay">
-                  <img src="images/nursing-homes.png" class="card-img-top" alt="">
-                  <p class="card-text p-1 px-3">Rankings</p>
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">America's Best Nursing Homes 2021</h5>
-                  <p class="card-text">In partnership with Statista, we established a ranking providing information and insights to help you during this challenging time.</p>
-                </div>
-              </article>
-            </section>
-          </div>
+            <article class="d-flex flex-row">
+              <img src="images/stephanie-taub.png" height="63" width="63" alt="">
+              <div class="content">
+                <h5>Don't Further Delay the Amy Coney Barrett Confirmation</h5>
+                <p>By Stephanie Taub</p>
+              </div>
+            </article>
+
+            <article class="d-flex flex-row">
+              <img src="images/brian-carroll.png" height="63" width="63" alt="">
+              <div class="content">
+                <h5>Americans Want Answers the Two Major Parties Won't Give</h5>
+                <p>By Brian Carroll</p>
+              </div>
+            </article>
+          </section>
+
+          <section id="special-items">
+            <article class="card">
+              <div class="card-img-b-overlay">
+                <img src="images/nursing-homes.png" class="card-img-top" alt="">
+                <p class="card-text p-1 px-3">Rankings</p>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">America's Best Nursing Homes 2021</h5>
+                <p class="card-text">In partnership with Statista, we established a ranking providing information and insights to help you during this challenging time.</p>
+              </div>
+            </article>
+          </section>
         </div>
       </div>
+    </div>
 
-      <div class="container-fluid" id="other">
-        <section class="row" id="in-the-magazine">
-          <article class="col-3">
+    <div class="container-fluid" id="other">
+      <section class="row" id="in-the-magazine">
+        <article class="col-3">
 
-          </article>
+        </article>
 
-          <article class="col-3">
+        <article class="col-3">
 
-          </article>
+        </article>
 
-          <article class="col-3">
+        <article class="col-3">
 
-          </article>
+        </article>
 
-          <article class="col-3">
+        <article class="col-3">
 
-          </article>
+        </article>
 
-          <article class="col-3">
+        <article class="col-3">
 
-          </article>
-        </section>
+        </article>
+      </section>
 
-        <section id="editors-pick">
-          <h2>Editor's Pick</h2>
-          
-          <div class="row">
-            <article class="col-3 card">
-              <div class="card-img-b-overlay">
-                <img src="images/trump-barret.png" class="card-img-top" alt="">
-                <p class="card-text p-1 px-3">U.S.</p>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Trump's Reshaping of the Judiciary Overvalued by Critics and Supporters</h5>
-                <p class="card-text">Since taking office in 2017, President Donald Trump has had a large and likely lasting impact on the federal judiciary. But it is neither historic nor unprecedented, as both his critics and supporters claim it is.</p>
-              </div>
-            </article>
-
-            <article class="col-3" card>
-              <div class="card-img-b-overlay">
-                <img src="images/zuckerberg.png" class="card-img-top" alt="">
-                <p class="card-text p-1 px-3">Tech & Science</p>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">What Could Happen to Facebook Under a Joe Biden Presidency?</h5>
-                <p class="card-text">It's no secret that Joe Biden isn't a fan of Facebook or its billionaire CEO Mark Zuckerberg. So what happens if he wins the White House? Legal experts say it could be facing a regulation shake-up.</p>
-              </div>
-            </article>
-
-            <article class="col-3 card">
-              <div class="card-img-b-overlay">
-                <img src="images/trump-barret.png" class="card-img-top" alt="">
-                <p class="card-text p-1 px-3">U.S.</p>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Trump's Reshaping of the Judiciary Overvalued by Critics and Supporters</h5>
-                <p class="card-text">Since taking office in 2017, President Donald Trump has had a large and likely lasting impact on the federal judiciary. But it is neither historic nor unprecedented, as both his critics and supporters claim it is.</p>
-              </div>
-            </article>
-
-            <article class="col-3" card>
-              <div class="card-img-b-overlay">
-                <img src="images/zuckerberg.png" class="card-img-top" alt="">
-                <p class="card-text p-1 px-3">Tech & Science</p>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">What Could Happen to Facebook Under a Joe Biden Presidency?</h5>
-                <p class="card-text">It's no secret that Joe Biden isn't a fan of Facebook or its billionaire CEO Mark Zuckerberg. So what happens if he wins the White House? Legal experts say it could be facing a regulation shake-up.</p>
-              </div>
-            </article>
-
-            <article class="col-3 card">
-              <div class="card-img-b-overlay">
-                <img src="images/trump-barret.png" class="card-img-top" alt="">
-                <p class="card-text p-1 px-3">U.S.</p>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Trump's Reshaping of the Judiciary Overvalued by Critics and Supporters</h5>
-                <p class="card-text">Since taking office in 2017, President Donald Trump has had a large and likely lasting impact on the federal judiciary. But it is neither historic nor unprecedented, as both his critics and supporters claim it is.</p>
-              </div>
-            </article>
-
-            <article class="col-3" card>
-              <div class="card-img-b-overlay">
-                <img src="images/zuckerberg.png" class="card-img-top" alt="">
-                <p class="card-text p-1 px-3">Tech & Science</p>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">What Could Happen to Facebook Under a Joe Biden Presidency?</h5>
-                <p class="card-text">It's no secret that Joe Biden isn't a fan of Facebook or its billionaire CEO Mark Zuckerberg. So what happens if he wins the White House? Legal experts say it could be facing a regulation shake-up.</p>
-              </div>
-            </article>
-
-            <article class="col-3 card">
-              <div class="card-img-b-overlay">
-                <img src="images/trump-barret.png" class="card-img-top" alt="">
-                <p class="card-text p-1 px-3">U.S.</p>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Trump's Reshaping of the Judiciary Overvalued by Critics and Supporters</h5>
-                <p class="card-text">Since taking office in 2017, President Donald Trump has had a large and likely lasting impact on the federal judiciary. But it is neither historic nor unprecedented, as both his critics and supporters claim it is.</p>
-              </div>
-            </article>
-
-            <article class="col-3" card>
-              <div class="card-img-b-overlay">
-                <img src="images/zuckerberg.png" class="card-img-top" alt="">
-                <p class="card-text p-1 px-3">Tech & Science</p>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">What Could Happen to Facebook Under a Joe Biden Presidency?</h5>
-                <p class="card-text">It's no secret that Joe Biden isn't a fan of Facebook or its billionaire CEO Mark Zuckerberg. So what happens if he wins the White House? Legal experts say it could be facing a regulation shake-up.</p>
-              </div>
-            </article>
-          </div>
-        </section>
-      </div>
-
-      <div class="container-fluid" id="catgegories">
-        <section id="US">
-          <h2>U.S.</h2>
-          <div class="row">
-            <article class="col-4">
-              <div class="card">
-                <img class="card-img-top" src="images/oregon-prisoners.png" alt="">
-                <h5 class="card-body">12 Oregon Prisoners Killed by COVID, Over 1,000 Inmates Infected</h5>
-              </div>
-            </article>
-
-            <article class="col-4">
-              <div class="card">
-                <img class="card-img-top" src="images/voter-registration.png" alt="">
-                <h5 class="card-body">Voter Registration Deadlines By State</h5>
-              </div>
-            </article>
-
-            <div class="col-4">
-              <article class="d-flex flex-row">
-                <img src="images/biden-abortion.png" width="110" alt="">
-                <h5>Fact Check: Does Biden Support Late-Term Abortion Like Trump Claimed?</h5>
-              </article>
-
-              <article class="d-flex flex-row">
-                <img src="images/kkk.png" width="110" alt="">
-                <h5>Iowa Police Department To Change Logo Over Resemblance To KKK Grand Dragon</h5>
-              </article>
-
-              <article class="d-flex flex-row">
-                <img src="images/trump-return.png" width="110" alt="">
-                <h5>'Shocking Irresponsibility': Governors Condemn Trump's White House Return</h5>
-              </article>
+      <section id="editors-pick">
+        <h2>Editor's Pick</h2>
+        
+        <div class="row">
+          <article class="col-3 card">
+            <div class="card-img-b-overlay">
+              <img src="images/trump-barret.png" class="card-img-top" alt="">
+              <p class="card-text p-1 px-3">U.S.</p>
             </div>
-          </div>
-        </section>
-
-        <section id="world">
-          <h2>World</h2>
-          
-        </section>
-      </div>
-
-      <div class="container-fluid row" id="subscription">
-        <section id="subscribe" class="col-8">
-          <h3>Subscribe</h3>
-          <div class="row">
-            <div class="col-4">
-              <img src="images/netanyahu.png" alt="">
-              <img src="images/rbg.png" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Trump's Reshaping of the Judiciary Overvalued by Critics and Supporters</h5>
+              <p class="card-text">Since taking office in 2017, President Donald Trump has had a large and likely lasting impact on the federal judiciary. But it is neither historic nor unprecedented, as both his critics and supporters claim it is.</p>
             </div>
-            <div class="col-8">
-              <h2>In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h2>
-              <p>All Access + Weekly Delivery.<br>Choose A Membership That's Perfect for You!</p>
-              <button>Subscribe</button>
+          </article>
+
+          <article class="col-3" card>
+            <div class="card-img-b-overlay">
+              <img src="images/zuckerberg.png" class="card-img-top" alt="">
+              <p class="card-text p-1 px-3">Tech & Science</p>
             </div>
-          </div>
-        </section>
-
-        <section id="newsletter" class="col-4">
-          <h3>Newsletter</h3>
-          <div class="row">
-            <div class="col-6"></div>
-            <div class="col-6">
-              <h2>The Starting 5</h2>
-              <p>See why nearly a quarter of a million subscribers begin their day with the Starting 5</p>
-              <form action="">
-                <input type="email" placeholder="Email address">
-                <input type="submit" value="Free Sign Up">
-              </form>
+            <div class="card-body">
+              <h5 class="card-title">What Could Happen to Facebook Under a Joe Biden Presidency?</h5>
+              <p class="card-text">It's no secret that Joe Biden isn't a fan of Facebook or its billionaire CEO Mark Zuckerberg. So what happens if he wins the White House? Legal experts say it could be facing a regulation shake-up.</p>
             </div>
-          </div>
-        </section>
-      </div>
+          </article>
 
-      <div class="container-fluid" id="bottom">
-        <footer>
-          <div class="d-flex flex-row justify-content-between">
-            <a href="#">Newsweek <small>© 2020 NEWSWEEK DIGITAL LLC</small></a>
-            <ul>
-              <li><a href="#">A</a></li>
-              <li><a href="#">B</a></li>
-              <li><a href="#">C</a></li>
-              <li><a href="#">D</a></li>
-              <li><a href="#">E</a></li>
-            </ul>
-          </div>
+          <article class="col-3 card">
+            <div class="card-img-b-overlay">
+              <img src="images/trump-barret.png" class="card-img-top" alt="">
+              <p class="card-text p-1 px-3">U.S.</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Trump's Reshaping of the Judiciary Overvalued by Critics and Supporters</h5>
+              <p class="card-text">Since taking office in 2017, President Donald Trump has had a large and likely lasting impact on the federal judiciary. But it is neither historic nor unprecedented, as both his critics and supporters claim it is.</p>
+            </div>
+          </article>
 
-          <ul id="editions">
-            <li><a href="#">Editions:</a></li>
-            <li><a href="#">U.S. Edition</a></li>
-            <li><a href="#">日本</a></li>
-            <li><a href="#">Pakistan</a></li>
-            <li><a href="#">Polska</a></li>
-            <li><a href="#">România</a></li>
+          <article class="col-3" card>
+            <div class="card-img-b-overlay">
+              <img src="images/zuckerberg.png" class="card-img-top" alt="">
+              <p class="card-text p-1 px-3">Tech & Science</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">What Could Happen to Facebook Under a Joe Biden Presidency?</h5>
+              <p class="card-text">It's no secret that Joe Biden isn't a fan of Facebook or its billionaire CEO Mark Zuckerberg. So what happens if he wins the White House? Legal experts say it could be facing a regulation shake-up.</p>
+            </div>
+          </article>
+
+          <article class="col-3 card">
+            <div class="card-img-b-overlay">
+              <img src="images/trump-barret.png" class="card-img-top" alt="">
+              <p class="card-text p-1 px-3">U.S.</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Trump's Reshaping of the Judiciary Overvalued by Critics and Supporters</h5>
+              <p class="card-text">Since taking office in 2017, President Donald Trump has had a large and likely lasting impact on the federal judiciary. But it is neither historic nor unprecedented, as both his critics and supporters claim it is.</p>
+            </div>
+          </article>
+
+          <article class="col-3" card>
+            <div class="card-img-b-overlay">
+              <img src="images/zuckerberg.png" class="card-img-top" alt="">
+              <p class="card-text p-1 px-3">Tech & Science</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">What Could Happen to Facebook Under a Joe Biden Presidency?</h5>
+              <p class="card-text">It's no secret that Joe Biden isn't a fan of Facebook or its billionaire CEO Mark Zuckerberg. So what happens if he wins the White House? Legal experts say it could be facing a regulation shake-up.</p>
+            </div>
+          </article>
+
+          <article class="col-3 card">
+            <div class="card-img-b-overlay">
+              <img src="images/trump-barret.png" class="card-img-top" alt="">
+              <p class="card-text p-1 px-3">U.S.</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Trump's Reshaping of the Judiciary Overvalued by Critics and Supporters</h5>
+              <p class="card-text">Since taking office in 2017, President Donald Trump has had a large and likely lasting impact on the federal judiciary. But it is neither historic nor unprecedented, as both his critics and supporters claim it is.</p>
+            </div>
+          </article>
+
+          <article class="col-3" card>
+            <div class="card-img-b-overlay">
+              <img src="images/zuckerberg.png" class="card-img-top" alt="">
+              <p class="card-text p-1 px-3">Tech & Science</p>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">What Could Happen to Facebook Under a Joe Biden Presidency?</h5>
+              <p class="card-text">It's no secret that Joe Biden isn't a fan of Facebook or its billionaire CEO Mark Zuckerberg. So what happens if he wins the White House? Legal experts say it could be facing a regulation shake-up.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <div class="container-fluid" id="catgegories">
+      <section id="US">
+        <h2>U.S.</h2>
+        <div class="row">
+          <article class="col-4">
+            <div class="card">
+              <img class="card-img-top" src="images/oregon-prisoners.png" alt="">
+              <h5 class="card-body">12 Oregon Prisoners Killed by COVID, Over 1,000 Inmates Infected</h5>
+            </div>
+          </article>
+
+          <article class="col-4">
+            <div class="card">
+              <img class="card-img-top" src="images/voter-registration.png" alt="">
+              <h5 class="card-body">Voter Registration Deadlines By State</h5>
+            </div>
+          </article>
+
+          <div class="col-4">
+            <article class="d-flex flex-row">
+              <img src="images/biden-abortion.png" width="110" alt="">
+              <h5>Fact Check: Does Biden Support Late-Term Abortion Like Trump Claimed?</h5>
+            </article>
+
+            <article class="d-flex flex-row">
+              <img src="images/kkk.png" width="110" alt="">
+              <h5>Iowa Police Department To Change Logo Over Resemblance To KKK Grand Dragon</h5>
+            </article>
+
+            <article class="d-flex flex-row">
+              <img src="images/trump-return.png" width="110" alt="">
+              <h5>'Shocking Irresponsibility': Governors Condemn Trump's White House Return</h5>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="world">
+        <h2>World</h2>
+        
+      </section>
+    </div>
+
+    <div class="container-fluid row" id="subscription">
+      <section id="subscribe" class="col-8">
+        <h3>Subscribe</h3>
+        <div class="row">
+          <div class="col-4">
+            <img src="images/netanyahu.png" alt="">
+            <img src="images/rbg.png" alt="">
+          </div>
+          <div class="col-8">
+            <h2>In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h2>
+            <p>All Access + Weekly Delivery.<br>Choose A Membership That's Perfect for You!</p>
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="newsletter" class="col-4">
+        <h3>Newsletter</h3>
+        <div class="row">
+          <div class="col-6"></div>
+          <div class="col-6">
+            <h2>The Starting 5</h2>
+            <p>See why nearly a quarter of a million subscribers begin their day with the Starting 5</p>
+            <form action="">
+              <input type="email" placeholder="Email address">
+              <input type="submit" value="Free Sign Up">
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="container-fluid" id="bottom">
+      <footer>
+        <div class="d-flex flex-row justify-content-between">
+          <a href="#">Newsweek <small>© 2020 NEWSWEEK DIGITAL LLC</small></a>
+          <ul>
+            <li><a href="#">A</a></li>
+            <li><a href="#">B</a></li>
+            <li><a href="#">C</a></li>
+            <li><a href="#">D</a></li>
+            <li><a href="#">E</a></li>
           </ul>
+        </div>
 
-          <ul id="menu">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Corrections</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Editorial Guidelines</a></li>
-            <li><a href="#">Advertise</a></li>
-            <li><a href="#">Copyright</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Cookie Policy</a></li>
-            <li><a href="#">Terms of Sale</a></li>
-            <li><a href="#">Archive</a></li>
-            <li><a href="#">Announcements</a></li>
-            <li><a href="#">GDPR Privacy Settings</a></li>
-          </ul>
-        </footer>
-      </div>
-    
+        <ul id="editions">
+          <li><a href="#">Editions:</a></li>
+          <li><a href="#">U.S. Edition</a></li>
+          <li><a href="#">日本</a></li>
+          <li><a href="#">Pakistan</a></li>
+          <li><a href="#">Polska</a></li>
+          <li><a href="#">România</a></li>
+        </ul>
+
+        <ul id="menu">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Corrections</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Editorial Guidelines</a></li>
+          <li><a href="#">Advertise</a></li>
+          <li><a href="#">Copyright</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">Terms of Sale</a></li>
+          <li><a href="#">Archive</a></li>
+          <li><a href="#">Announcements</a></li>
+          <li><a href="#">GDPR Privacy Settings</a></li>
+        </ul>
+      </footer>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

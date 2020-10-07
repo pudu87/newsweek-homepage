@@ -1,3 +1,7 @@
+:root {
+  --nw-red: #f72210;
+}
+
 body {
   background-color: #f4f5f6;
   font-family: "Roboto Condensed", sans-serif;
@@ -16,21 +20,79 @@ a {
 /* HEADER */
 
 header {
-  background-color: #f72210;
+  background-color: var(--nw-red);
+  height: 95px;
+}
+#title {
+  font-size: 6em;
+  font-family: 'Rokkitt', serif;
+  line-height: 0;
+}
+header a:hover {
+  text-decoration: none;
+}
+#meteo > * {
+  padding-left: 30px;
+}
+#meteo > a {
+  font-size: .9em;
+}
+#login,
+#subscribe-btn {
+  margin-right: 15px;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#subscribe-btn {
+  background-color: #ffe400;
+  border-radius: 99em;
+  padding: 2px 15px;
 }
 
 /* NAV */
 
+#nav-1 > span {
+  color: #999;
+  font-size: 1.5em;
+  font-weight: normal;
+  border-right: 1px solid #ddd;
+}
 #nav-1,
 #nav-2 {
   font-weight: bold;
+}
+#nav-1 > a:hover,
+#nav-2 > a:hover {
+ color: var(--nw-red);
+ text-decoration: none;
 }
 #nav-1 {
   font-size: 1.2em;
   border-bottom: 2px solid #eee;
 }
-#nav-2 > a {
+#nav-1 input {
+  max-width: 3.5em;
+  border: none;
+}
+#nav-2 {
+  border-bottom: 1px solid #ccc;
+}
+#nav-2 > * {
   text-transform: uppercase;
+  line-height: 0;
+  padding-top: .5em;
+}
+#nav-2 > a {
+  color: #999;
+}
+#pretty-bar-1 {
+  height: 14px;
+  background: linear-gradient(to right,#ddd,#fff);
+}
+#pretty-bar-2 {
+  height: 6px;
+  border-bottom: 2px solid #eee;
 }
 
 /* ARTICLES */
@@ -49,7 +111,7 @@ header {
 .card-img-b-overlay > p {
   position: absolute;
   bottom: 0;
-  color: #f72210;
+  color: var(--nw-red);
   text-transform: uppercase;
   font-weight: bold;
   background-color: rgba(255, 255, 255, 0.9);
