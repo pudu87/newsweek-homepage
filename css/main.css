@@ -254,6 +254,130 @@ header a:hover {
   color: #333;
 }
 
+/* OTHER */
+
+#editors-pick h2 {
+  padding: 1em;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+}
+#editors-pick span {
+  padding: 0 8px;
+  margin-right: .5em;
+  font-size: 1.3em;
+  background-color: var(--nw-red);
+  color: #fff;
+}
+#editors-pick h5 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+#editors .card-body p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CATEGORIES */
+
+#categories > section {
+  border-top: 1px solid #ccc;
+  padding: 20px 0;
+}
+#categories h2 {
+  color: var(--nw-red);
+  font-size: 1.4em;
+  font-weight: bold;
+}
+#categories .card-body h5 {
+  font-weight: bold;
+}
+#categories aside > article {
+  border-top: 1px solid #ccc;
+  padding: 10px 0;
+}
+#categories aside > article:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+#categories aside img {
+  width: 110px;
+  flex-shrink: 0;
+}
+#categories aside h5 {
+  font-weight: bold;
+  font-size: 1.1em;
+  padding-left: 1em;
+}
+
+/* SUBSCRIPTION */
+
+#subscription {
+  padding-top: 35px;
+  border-top: 2px solid #eee;
+  height: 400px;
+}
+#subscription > div {
+  padding: 0 30px;
+}
+#subscription h3 {
+  color: var(--nw-red);
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: bold;
+}
+#subscribe > div {
+  background-color: #f4f5f6;
+  padding: 40px 20px;
+  margin-right: 20px;
+}
+#rbg {
+  position: absolute;
+  left: 100px;
+  top: 10px;
+}
+#subscribe .content {
+  padding-left: 3em;
+  padding-top: 1em;
+}
+#subscribe .content h2,
+#newsletter .content h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+#subscribe .content p,
+#newsletter .content p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .9em;
+}
+#subscribe button,
+#newsletter input:last-child {
+  color: #fff;
+  background-color: var(--nw-red);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#newsletter .content{
+  padding-top: 50px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+#newsletter > div {
+  height: 100%;
+}
+#newsletter .img {
+  background-image: url(../images/newsletter.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#newsletter input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
 /* FOOTER */
 
 footer li {
