@@ -24,44 +24,58 @@ a {
 /* HEADER */
 
 header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
   background-color: var(--nw-red);
-  height: 95px;
-}
-header > div:first-child {
-  margin-right: 0;
-}
-#title {
-  font-size: 6em;
-  font-family: 'Rokkitt', serif;
-  line-height: 0;
+  height: 50px;
+  padding-left: 20px;
+  padding-right: 10px;
 }
 header a:hover {
   text-decoration: none;
+  color: inherit;
 }
-#meteo > * {
-  padding-left: 30px;
+#meteo {
+  display: none;
 }
-#meteo > a {
-  font-size: .9em;
+#title {
+  font-size: 2em;
+  font-family: 'Rokkitt', serif;
+  line-height: 1.5;
+  font-weight: bold;
+}
+#login {
+  margin-right: 10px;
 }
 #login,
 #subscribe-btn {
-  margin-right: 15px;
-  font-size: 1.1em;
+  font-size: .8em;
   font-weight: bold;
   text-transform: uppercase;
 }
 #subscribe-btn {
   background-color: #ffe400;
   border-radius: 99em;
-  padding: 2px 15px;
+  padding: 1px 10px;
+  white-space: nowrap;
+}
+#hamburger {
+  font-size: 1em;
+  color: #fff;
+  margin-left: .5em;
 }
 
 /* NAV */
 
+#top > *:not(header) {
+  display: none;
+}
 #nav-1 > span {
   color: #999;
-  font-size: 1.5em;
+  font-size: .5em;
   font-weight: normal;
   border-right: 1px solid #ddd;
 }
@@ -75,11 +89,11 @@ header a:hover {
  text-decoration: none;
 }
 #nav-1 {
-  font-size: 1.2em;
+  font-size: 1.1em;
   border-bottom: 2px solid #eee;
 }
 #nav-1 input {
-  max-width: 3.5em;
+  max-width: 3em;
   border: none;
 }
 #nav-2 {
@@ -104,6 +118,9 @@ header a:hover {
 
 /* NEWS */
 
+#news {
+  margin-top: 60px;
+}
 #news h2 {
   color: #999;
   text-transform: uppercase;
@@ -187,6 +204,7 @@ header a:hover {
   border-top: 1px solid #ddd;
   border-bottom: 4px solid #ddd;
   margin-top: 1px;
+  text-align: right;
 }
 #vs {
   position: relative;
@@ -335,7 +353,6 @@ header a:hover {
   background-color: #f4f5f6;
   padding: 40px 20px;
   margin-right: 20px;
-  height: 345px;
 }
 #rbg {
   position: absolute;
@@ -368,14 +385,12 @@ header a:hover {
   border: 1px solid #ccc;
   border-radius: 2px;
 }
-#newsletter > div {
-  height: 345px;
-}
 #newsletter .img {
   background-image: url(../images/newsletter.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  height: 170px;
 }
 #newsletter input {
   width: 100%;
@@ -411,6 +426,7 @@ footer .top span {
   color: #999;
   font-size: .8em;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 footer .top li {
   font-size: 25px;
@@ -445,4 +461,58 @@ footer li > a:hover {
 #menu > li:first-child {
   border-left: none;
   padding-left: 0;  
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) {
+
+  #title {
+    line-height: 1;
+  }
+  #login,
+  #subscribe-btn {
+    font-size: 1.1em;
+  }
+  #subscribe-btn {
+    padding: 2px 15px;
+  }
+  #hamburger {
+    font-size: 2em;
+  }
+  footer .top {
+    display: flex;
+    justify-content: space-between;
+  }
+  #newsletter .img,
+  #subscribe > div {
+    height: 345px;
+  }
+}
+
+@media (min-width: 992px) {
+
+  header {
+    position: static;
+    height: 95px;
+  }
+  header > div:first-child {
+    margin-right: 0;
+  }
+  #title {
+    text-align: center;
+    font-size: 6em;
+  }
+  #meteo {
+    display: block;
+  }
+  #hamburger {
+    display: none;
+  }
+  #top > *:not(header) {
+    display: block;
+  }
+  #news {
+    margin-top: 0;
+  }
 }
